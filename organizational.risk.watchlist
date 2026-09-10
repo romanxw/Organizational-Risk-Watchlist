@@ -1,0 +1,60 @@
+high_risk_organizations = []
+low_risk_organizations = []
+high_risk_scores = []
+low_risk_scores = []
+org_1 = input("Enter the first organization: ")
+risk_score_1 = int(input("Enter the risk score: "))
+org_2 = input("Enter the second organization: ")
+risk_score_2 = int(input("Enter the risk score: "))
+org_3 = input("Enter the third organization: ")
+risk_score_3 = int(input("Enter the risk score: "))
+org_4 = input("Enter the fourth organization: ")
+risk_score_4 = int(input("Enter the risk score: "))
+org_5 = input("Enter the fifth organization: ")
+risk_score_5 = int(input("Enter the risk score: "))
+if risk_score_1 >= 70:
+    high_risk_organizations.append(org_1)
+    high_risk_scores.append(risk_score_1)
+else:
+    low_risk_organizations.append(org_1)
+    low_risk_scores.append(risk_score_1)
+if risk_score_2 >= 70:
+    high_risk_organizations.append(org_2)
+    high_risk_scores.append(risk_score_2)
+else:
+    low_risk_organizations.append(org_2)
+    low_risk_scores.append(risk_score_2)
+if risk_score_3 >= 70:
+    high_risk_organizations.append(org_3)
+    high_risk_scores.append(risk_score_3)
+else:
+    low_risk_organizations.append(org_3)
+    low_risk_scores.append(risk_score_3)
+if risk_score_4 >= 70:
+    high_risk_organizations.append(org_4)
+    high_risk_scores.append(risk_score_4)
+else:
+    low_risk_organizations.append(org_4)
+    low_risk_scores.append(risk_score_4)
+if risk_score_5 >= 70:
+    high_risk_organizations.append(org_5)
+    high_risk_scores.append(risk_score_5)
+else:
+    low_risk_organizations.append(org_5)
+    low_risk_scores.append(risk_score_5)
+print("These are the high risk organizations: " + str(high_risk_organizations))
+print("These are the low risk organizations: " + str(low_risk_organizations))
+print(high_risk_organizations)
+print(len(high_risk_organizations))
+print(low_risk_organizations)
+print(len(low_risk_organizations))
+if len(high_risk_scores) > 0:
+    average_high_risk_score = sum(high_risk_scores) / len(high_risk_scores)
+    print("Average high risk score:", average_high_risk_score)
+else:
+    print("No high risk organizations.")
+if len(low_risk_scores) > 0:
+    average_low_risk_score = sum(low_risk_scores) / len(low_risk_scores)
+    print("Average low risk score:", average_low_risk_score)
+else:
+    print("No low risk organizations.")
